@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/css.css">
+    <script src="include.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>👤Customers</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div data-include="navbar.html"></div>
+
+
+
+    <!--Showcase-->
+    <div class="showcase">
+        <h1 class="intro">Welcome to interface for Products</h1>
+
+        <div class="table">
+            <table>
+                <h3>List Products</h3>
+                <div class="button-center">  
+                    <a class="button" href="createProducts.html">Create product</a>
+                </div>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock</th>
+                    <th>Options</th>
+                </tr>
+                <tr id="productTable">
+                    
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <div data-include="footer.html"></div>
+</body>
+<script src="/js/Product/getProduct.js"></script>
+</html>

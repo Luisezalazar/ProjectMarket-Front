@@ -1,0 +1,210 @@
+:root {
+    --primary-color: rgb(19, 124, 104);
+    --secondary-color: rgb(25, 172, 145);
+    --tertiary-color: rgb(42, 194, 166);
+}
+
+body {
+    background-color: rgb(177, 255, 207);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px, 0;
+}
+
+p {
+    margin: 10px 0;
+}
+
+/*Navbar*/
+.navbar ul {
+    display: flex;
+}
+
+.navbar a {
+    color: black;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+.navbar a:hover {
+    border-bottom: 2px rgb(23, 23, 157) solid;
+    color: rgb(23, 23, 157);
+}
+
+.navbar .flex {
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: var(--secondary-color);
+    color: rgb(17, 17, 17);
+    height: 70px;
+    box-shadow: 0 3px 6px rgb(133, 133, 133);
+}
+
+.navbar .logo a:hover {
+    color: rgb(19, 109, 221);
+    border-bottom: none;
+
+}
+
+/*Showcase*/
+.showcase .intro {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.showcase .table-head {
+    border-style: dashed;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+td,
+th {
+    border: 1px solid;
+    text-align: left;
+    padding: 8px;
+}
+
+.form-control {
+    border-radius: 15px;
+    background-color: var(--tertiary-color);
+    padding: 30px;
+    margin: auto;
+    max-width: 50%;
+    margin-bottom: 30px;
+
+}
+
+h3 {
+    text-align: center;
+}
+.icon{
+    block-size: 30px;
+}
+
+/*Footer*/
+.footer .social a {
+    margin: 0 10px;
+}
+
+/*Utilites*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 40px;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.bg-dark {
+    background: var(--secondary-color);
+    color: rgb(4, 60, 56);
+}
+
+/*Padding*/
+.py-5 {
+    padding: 4rem 0;
+}
+
+/*Button*/
+.button-center {
+
+    text-align: end;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: var(--secondary-color);
+    border: 2px solid black;
+    color: black;
+    padding: 3px 3px;
+    text-align: center;
+    font-size: 14px;
+    margin: auto;
+}
+
+
+.button:hover {
+    background: var(--primary-color);
+}
+
+input[type=text],
+input[type=email],
+input[type=number],
+
+select {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: rgb(0, 0, 0);
+    padding: 10px 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+
+}
+
+input[type=submit]:hover {
+    background-color: var(--secondary-color);
+}
