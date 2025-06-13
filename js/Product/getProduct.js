@@ -15,8 +15,9 @@ const getProduct = async () => {
                 <td>${product.price}</td>
                 <td>${product.stock}</td>
                 <td>
-                <a href="editProducts.html?id=${product.id}"> <img class="icon" src="/img/avatar-de-usuario.png" alt=""></a>
-
+                <a href="editProducts.html?id=${product.id}"> <img class="icon" src="/img/boton-editar.png" alt=""></a>
+                <a class="btn-icon" onclick="deleteProduct(${product.id})" href="#"><img class="icon" src="/img/eliminar.png"></a>
+                
                 </td>
                 `
             )

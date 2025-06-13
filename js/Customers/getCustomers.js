@@ -15,7 +15,8 @@ const getCustomers = async () => {
                 <td>${customer.email}</td>
                 <td>${customer.phone}</td>
                 <td>
-                
+                <a href="editCustomers.html?id=${customer.id}"> <img class="icon" src="/img/boton-editar.png" alt=""></a>
+                <a href="#" class="btn-icon" onclick="deleteCustomer(${customer.id})"><img class="icon" src="/img/eliminar.png"></a>
                 </td>
                 `)
             });

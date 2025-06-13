@@ -19,7 +19,7 @@ customers.addEventListener('submit', async (e) => {
         const response = await fetch(request);
         const result = await response.json();
         console.log(result);
-        alert("Create")
+        window.location.href = "seeCustomers.html"
     } catch (error) {
         console.error("Error al crear cliente:", error);
     }

@@ -108,9 +108,12 @@ h3 {
     text-align: center;
 }
 .icon{
-    block-size: 30px;
+    block-size: 20px;
 }
-
+.btn-icon{
+    border-style: none;
+    background: none;
+}
 /*Footer*/
 .footer .social a {
     margin: 0 10px;

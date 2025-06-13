@@ -23,7 +23,7 @@
     <div class="showcase">
         <h1 class="intro">Edit Customers</h1>
         <div class="form-control">
-            <form action="POST">
+            <form action="PUT" id="editForm" action="http://localhost:3000/api/customer/updateCustomers/:id">
 
                 <label for="name">Name: </label>
                 <input type="text" id="name" placeholder=" " required>
@@ -45,5 +45,5 @@
     <!-- Footer -->
     <div data-include="footer.html"></div>
 </body>
-<script src="/httpRequest.js"></script>
+<script src="/js/Customers/putCustomers.js"></script>
 </html>

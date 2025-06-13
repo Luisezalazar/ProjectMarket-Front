@@ -22,6 +22,8 @@ products.addEventListener('submit', async (e) => {
         const response = await fetch(request);
         const result = await response.json();
         console.log(result)
+        window.location.href = "seeProducts.html";
+        
     } catch (error) {
         console.error("Error al crear producto:", error);
     }
